@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="airplaneticketbooking.DecisionMenuController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="800.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Welcome to Morazoom Airline">
+               <font>
+                  <Font name="Times New Roman" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="checnkFlightInfo" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#checkFlightInfo" prefHeight="35.0" prefWidth="240.0" text="Check Flight Information">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </Button>
+            <ComboBox fx:id="destinationChoice" prefHeight="35.0" prefWidth="240.0" promptText="Choose your destination">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </ComboBox>
+            <Button fx:id="letsGoBtn" mnemonicParsing="false" onAction="#letsGo" prefHeight="35.0" prefWidth="100.0" text="Let's Go">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitBtn" mnemonicParsing="false" onAction="#exit" prefHeight="35.0" prefWidth="140.0" text="Exit Program">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="airplaneticketbooking.FlightInformationController">
+   <center>
+      <TableView fx:id="table" prefHeight="540.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+        <columns>
+            <TableColumn fx:id="destination" editable="false" prefWidth="160.0" text="Departing To" />
+          <TableColumn fx:id="flight" editable="false" prefWidth="160.0" sortable="false" text="Flight" />
+          <TableColumn fx:id="schedule" editable="false" prefWidth="160.0" sortable="false" text="Schedule" />
+            <TableColumn fx:id="gate" editable="false" prefWidth="160.0" sortable="false" text="Gate" />
+            <TableColumn fx:id="remark" editable="false" prefWidth="160.0" sortable="false" text="Remark" />
+        </columns>
+      </TableView>
+   </center>
+   <top>
+      <HBox prefHeight="60.0" prefWidth="800.0" spacing="250.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Hurricane International Airport : Departures">
+               <font>
+                  <Font name="Times New Roman" size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+         </padding>
+      </HBox>
+   </top>
+</BorderPane>
